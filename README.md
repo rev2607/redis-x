@@ -2,7 +2,6 @@
 
 [![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://en.cppreference.com/w/cpp/17)
 [![Linux](https://img.shields.io/badge/Platform-Linux-green.svg)](https://www.linux.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
 
 > A high-performance, Redis-inspired in-memory database built from scratch in C++
@@ -235,10 +234,6 @@ This project transformed my understanding of how databases work and gave me the 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
