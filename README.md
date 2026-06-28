@@ -1,4 +1,4 @@
-# 🚀 Redis-X
+#  Redis-X
 
 [![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://en.cppreference.com/w/cpp/17)
 [![Linux](https://img.shields.io/badge/Platform-Linux-green.svg)](https://www.linux.org/)
@@ -8,33 +8,33 @@
 
 Redis-X is a lightweight, production-ready in-memory database that implements core Redis functionality with modern C++ design patterns. Built as a learning project to understand distributed systems and database internals, it features efficient data structures, non-blocking I/O, and concurrent processing capabilities.
 
-## ✨ Features
+##  Features
 
-### 🔑 Basic Key-Value Operations
+###  Basic Key-Value Operations
 - **SET/GET/DEL** - Standard string operations with O(1) hash table lookups
 - **KEYS** - Pattern-based key enumeration
 - **PEXPIRE/PTTL** - Millisecond-precision TTL management with automatic expiration
 
-### 📊 Advanced Data Structures
+###  Advanced Data Structures
 - **Sorted Sets (ZSET)** - Implemented with AVL trees for O(log n) operations:
   - `ZADD` - Add/update members with scores
   - `ZREM` - Remove members
   - `ZSCORE` - Get member scores
   - `ZQUERY` - Range queries with pagination
 
-### ⚡ Performance & Concurrency
+###  Performance & Concurrency
 - **Non-blocking I/O** - Event-driven architecture using `poll()`
 - **Thread Pool** - Background processing for large data structure operations
 - **Progressive Rehashing** - Zero-downtime hash table resizing
 - **Efficient Memory Management** - Custom allocators and RAII patterns
 
-### 🏗️ Core Architecture
+###  Core Architecture
 - **Hash Tables** - Fast O(1) key lookups with collision handling
 - **AVL Trees** - Self-balancing binary trees for sorted operations
 - **Min-Heap** - Efficient TTL expiration management
 - **Linked Lists** - Connection management and idle timeout handling
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Language**: C++17
 - **Platform**: Linux (POSIX sockets, pthreads)
@@ -43,7 +43,7 @@ Redis-X is a lightweight, production-ready in-memory database that implements co
 - **Concurrency**: POSIX threads with mutex/condition variables
 - **Build System**: Make/GCC/Clang
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Linux/macOS with GCC 7+ or Clang 5+
@@ -81,7 +81,7 @@ Redis-X is a lightweight, production-ready in-memory database that implements co
    ./client
    ```
 
-## 📖 Usage Examples
+##  Usage Examples
 
 ### Basic Key-Value Operations
 ```bash
@@ -146,7 +146,7 @@ $ ./client keys
 (arr) end
 ```
 
-## 🏛️ Architecture Overview
+##  Architecture Overview
 
 ### Event-Driven Server
 Redis-X uses a single-threaded event loop with non-blocking I/O to handle thousands of concurrent connections efficiently:
@@ -167,27 +167,27 @@ Redis-X uses a single-threaded event loop with non-blocking I/O to handle thousa
 - **Thread Pool**: Background workers for expensive operations (large data structure cleanup)
 - **Lock-Free Design**: Minimal locking with careful data structure design
 
-## 🔮 Future Improvements
+##  Future Improvements
 
-### 🚀 Production Features
+###  Production Features
 - **Persistence Layer** - AOF (Append-Only File) and RDB snapshots
 - **Replication** - Master-slave replication with failover
 - **Clustering** - Distributed hash partitioning across nodes
 - **Memory Optimization** - Custom memory allocators and compression
 
-### ☁️ Deployment & Scaling
+###  Deployment & Scaling
 - **Docker Support** - Containerized deployment with health checks
 - **AWS Integration** - CloudFormation templates and auto-scaling groups
 - **Monitoring** - Prometheus metrics and Grafana dashboards
 - **Load Balancing** - Redis Cluster protocol implementation
 
-### 🔧 Developer Experience
+###  Developer Experience
 - **Redis Protocol** - Full RESP (Redis Serialization Protocol) compatibility
 - **Client Libraries** - Python, Node.js, and Go client implementations
 - **Benchmarking** - Redis-benchmark compatible performance testing
 - **Documentation** - API documentation and architecture deep-dives
 
-## 🎯 Why I Built This
+##  Why I Built This
 
 This project was born from a deep curiosity about how modern databases work under the hood. While using Redis in production environments, I found myself constantly wondering:
 
@@ -197,7 +197,7 @@ This project was born from a deep curiosity about how modern databases work unde
 
 Rather than just reading about these concepts, I decided to build my own Redis-like database from scratch to truly understand the internals. This hands-on approach taught me more about systems programming, data structures, and network programming than any textbook could.
 
-## 🧠 What I Learned
+##  What I Learned
 
 ### **Systems Programming Mastery**
 - **Network Programming**: Deep dive into TCP sockets, non-blocking I/O, and event-driven architectures
@@ -230,11 +230,3 @@ Rather than just reading about these concepts, I decided to build my own Redis-l
 This project transformed my understanding of how databases work and gave me the confidence to tackle complex systems programming challenges. It's a testament to the power of learning by building!
 
 ---
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
----
-
-**Built with ❤️ for learning distributed systems and database internals**
